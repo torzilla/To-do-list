@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Tor Rydberg">
+	<title>To Do List</title>
+	<link rel="stylesheet" type="text/css" href="ToDoCSS.css">
+	
+</head>
+<body>
+	<div class="container">
+		<header class="title">
+			<h1>To Do List</h1>
+		</header>
+		<section class="main">
+			<form>
+				<input id="text" type="text" title="What do you have to do?" autofocus>
+				<button id="btn" type="button" title="Do it!">Do it!</button>
+			</form>
+			
+			<ul class="list" id="list">
+			</ul>
+			
+		</section>
+	</div>
+<script type="text/javascript" src="ToDoJS.js"></script>
+</body>
+</html>
