@@ -1,0 +1,33 @@
+/*jslint browser: true */
+
+//variables
+var btn = document.getElementById("btn");
+var btn2 = document.getElementById("btn2")
+var list = document.getElementById("list");
+var item = document.getElementById("item");
+var text = document.getElementById("text")
+
+//function to add items and button to list when button is clicked
+
+btn.addEventListener("click", function() {
+  var li = document.createElement("li");
+  li.setAttribute("id", "item");
+  var newText = text.value;
+  var newBtn = document.createElement("button");
+  newBtn.setAttribute("id", "newBtn");
+  newBtn.setAttribute("title", "It's Done");
+  newBtn.setAttribute("type", "button");
+  newBtn.innerHTML = "It's Done";
+ 
+  li.innerHTML = newText;
+  list.appendChild(li);
+  li.appendChild(newBtn);
+ 
+  text.value="";
+  
+  //function to delete items and button from list when button is clicked
+  newBtn.addEventListener("click", function() {
+	list.removeChild(li, newBtn);
+	});
+  });
+  
